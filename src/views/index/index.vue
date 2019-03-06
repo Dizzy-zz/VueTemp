@@ -1,13 +1,29 @@
 <template>
   <div class="main">
-    index
+    <Test/>
   </div>
 </template>
 
-<script></script>
+<script>
+  import Test from './test';
+
+  export default {
+    data: function () {
+      return {
+        test: 'test',
+      }
+    },
+    components: {
+      Test,
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
   .main {
-    width: 100%;
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    color: #fff;
   }
 </style>

@@ -51,7 +51,7 @@ let common = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin('dist'),
+    new CleanWebpackPlugin(),
     new VueLoaderPlugin()
   ]
 };
